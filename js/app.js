@@ -57,9 +57,9 @@ const prompts = [
         id: 6,
         question: `You walk deeper into the dungeon soft sounds of pattering feet grow louder as you venture in as you come face to face with a pack of goblins! What do you do!?`,
         options: [
-            {text: `fight`, navigateToIdx: 7},
-            {text: `run`, navigateToIdx: 8},
-            {text: `negotiate`, navigateToIdx: 9}
+            {text: `fight`, navigateToIdx: 54},
+            {text: `run`, navigateToIdx: 0},
+            {text: `negotiate`, navigateToIdx: 55}
         ]
     },
     {
@@ -111,9 +111,9 @@ const prompts = [
         id: 12,
         question: `You are met with a wounded mage that has a bloodied cloth wrapped around their torso and a staff with a purple light ever so fading as time slowly crawls by. What will you do?`,
         options: [
-            {text: `Help them with the few health potions you have`, navigateToIdx: 100},
-            {text: `Take thier staff as they no longer need it`, navigateToIdx: 100},
-            {text: `Leave them to bleed out as you venture forward`, navigateToIdx: 100}
+            {text: `Help them with the few health potions you have`, navigateToIdx: 42},
+            {text: `Take thier staff as they no longer need it`, navigateToIdx: 43},
+            {text: `Leave them to bleed out as you venture forward`, navigateToIdx: 44}
         ]
     },
     {
@@ -190,7 +190,7 @@ const prompts = [
     },
     {
         id: 21,
-        question: `You have cleared the dungeon!`,
+        question: `You have made it out the dungeon!`,
         options: [
             {text: `reset`, navigateToIdx: 0},
             {text: `reset`, navigateToIdx: 0},
@@ -311,7 +311,7 @@ const prompts = [
         options: [
             {text: `Go left `, navigateToIdx: 4},
             {text: `Go right`, navigateToIdx: 12},
-            {text: `Loot and Scoot`, navigateToIdx: 21}
+            {text: `Loot and leave`, navigateToIdx: 21}
         ]
     },
     {
@@ -327,9 +327,9 @@ const prompts = [
         id: 36,
         question: `You command the goblins to find the dragon, as they lead you to a secret passage that goes straight into the lair of the scaled beast. What will you do?`,
         options: [
-            {text: `Command them to fight for you`, navigateToIdx: 100},
-            {text: `Fight the dragon yourself`, navigateToIdx: 100},
-            {text: `Fight with the goblins`, navigateToIdx: 100}
+            {text: `Command them to fight for you`, navigateToIdx: 39},
+            {text: `Fight the dragon yourself`, navigateToIdx: 18},
+            {text: `Fight with the goblins`, navigateToIdx: 41}
         ]
     },
     {
@@ -352,20 +352,173 @@ const prompts = [
     },
     {
         id: 39,
-        question: `You choose forward`,
+        question: `You command the goblins to fight the dragon, essentially sending them to their own demise they do as much damage as they can before all of them are slaughtered. What will you do now? `,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Finish the dragon`, navigateToIdx: 18},
+            {text: `Heal the dragon`, navigateToIdx: 40},
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
         id: 40,
-        question: `You have cleared the dungeon!`,
+        question: `You take out some potions and offer it to the dragon as if the goblins were the true aggressors and not you. The dragon weakened takes them and accepts your generosity and gestures that you take some treasure and leave. What will you do now?`,
         options: [
-            {text: `left`, navigateToIdx: 100},
-            {text: `right`, navigateToIdx: 100},
-            {text: `forward`, navigateToIdx: 100}
+            {text: `Take the treasure and leave`, navigateToIdx: 21},
+            {text: `Take the treasure and leave`, navigateToIdx: 21},
+            {text: `Take the treasure and leave`, navigateToIdx: 21}
+        ]
+    },
+    {
+        id: 41,
+        question: `You run in charging with the goblins but as you finally reach the dragon you notice it had reeled back and readied its breath attack and as it unleashes it. You and the goblins were burnt to ash. You Died`,
+        options: [
+            {text: `Reset`, navigateToIdx: 4},
+            {text: `Reset`, navigateToIdx: 12},
+            {text: `Reset`, navigateToIdx: 21}
+        ]
+    },
+    {
+        id: 42,
+        question: `You take out some potions and help the mage get back to a healthy condition. The mage then shows his gratitude and offers to help you finish the dungeon with what powers he has left. What will you do now? `,
+        options: [
+            {text: `Venture deeper into the dungeon together`, navigateToIdx: 47},
+            {text: `Go alone`, navigateToIdx: 45},
+            {text: `Tell the mage you only want his staff`, navigateToIdx: 46}
+        ]
+    },
+    {
+        id: 43,
+        question: `You grab the staff from the mage that is weak and bleeding and easily rip it from his hands. What will you do now?`,
+        options: [
+            {text: `Go deeper into the dungeon`, navigateToIdx: 46},
+            {text: `Help the mage`, navigateToIdx: 21},
+            {text: ``, navigateToIdx: 21}
+        ]
+    },
+    {
+        id: 44,
+        question: `You glare at the mage with a cold gaze and press forward knowing he will only slow you down when it comes down to killing the dragon. What will you do now?`,
+        options: [
+            {text: `Go deeper into the dungeon`, navigateToIdx: 45},
+            {text: ``, navigateToIdx: 100},
+            {text: ``, navigateToIdx: 100}
+        ]
+    },
+    {
+        id: 45,
+        question: `You venture forward finding yourself deeper than you thought you would be and infront of you is a door made of obsidian. You open the door and before you is the mounds of treasure and gold as promised. Now it is time to face the dragon. What will you do now? `,
+        options: [
+            {text: `Fight the dragon head on`, navigateToIdx: 18},
+            {text: `Talk to the dragon`, navigateToIdx: 24},
+            {text: `Hide`, navigateToIdx: 17}
+        ]
+    },
+    {
+        id: 46,
+        question: `You venture forward finding yourself deep in the dungeon and finally at the door to the dragon's hoard. You enter the room and once inside you ready yourself to fight the scaled beast. What will you do now?`,
+        options: [
+            {text: `Use the staff`, navigateToIdx: 48},
+            {text: `Fight the dragon`, navigateToIdx: 18},
+            {text: `Hide`, navigateToIdx: 17}
+        ]
+    },
+    {
+        id: 47,
+        question: `As you and mage venture deeper he promises that this will be quick if you allow him to use his spell. The two of you find the obsidian door and go in to find the dragon's hoard. Once inside the fight is on. What will you do now?`,
+        options: [
+            {text: `Let the mage cast his spell`, navigateToIdx: 50},
+            {text: `Fight the dragon together`, navigateToIdx: 49},
+            {text: `Hide`, navigateToIdx: 17}
+        ]
+    },
+    {
+        id: 48,
+        question: `You pull out the staff and whisper the incantation written upon the wooden staff, feeling a bit of your humanity leave your body, a purple ghasly orb appears and launches itself into the dragon. For a second the dragon comes charging towards you but then his body turn a deathly shade of violet. His body seizes up and convulses and his body lays limp. The incantation was a spell called death wish and you had slayed the dragon. What will you do now? `,
+        options: [
+            {text: `Loot the hoard`, navigateToIdx: 22},
+            {text: `Loot the dragon`, navigateToIdx: 23},
+            {text: `Leave`, navigateToIdx: 21}
+        ]
+    },
+    {
+        id: 49,
+        question: `You rush forward bringing down your sword over and over again as the mage cast a spell that empowers you to finally crush and cut into the dragon's scales. The dragon after multiple hits from a sword reinforced by magic is killed and nothing but the dragon's treasures remain along with it's corpse. What will you do now?`,
+        options: [
+            {text: `Loot the hoard`, navigateToIdx: 22},
+            {text: `Loot the dragon`, navigateToIdx: 23},
+            {text: `Leave`, navigateToIdx: 21}
+        ]
+    },
+    {
+        id: 50,
+        question: `You watch as the mage prepares his spell and with a whisper the dragon seems to fall dead. After a couple of seconds a strange purple sphere comes out of the dragon and engulfs the mage. The mage laughs like a true villian as he states that now his plan is in action. He absorbed the soul of the dragon and is now looking to absorbs your soul. What will you do now?`,
+        options: [
+            {text: `Fight the mage`, navigateToIdx: 51},
+            {text: `Try to talk`, navigateToIdx: 52},
+            {text: `Rush for the exit`, navigateToIdx: 21}
+        ]
+    },
+    {
+        id: 51,
+        question: `The mage gets ready with his staff as he points it towards you while starting to whisper something. What will you do now? `,
+        options: [
+            {text: `Rush in with your sword`, navigateToIdx: 56},
+            {text: `Try to throw a knife at his staff`, navigateToIdx: 53},
+            {text: `Try to talk`, navigateToIdx: 52}
+        ]
+    },
+    {
+        id: 52,
+        question: `You bring up that if it were not for you he would not be alive. The mage stops his incantation and ponders your words. He motions you to get the treasure and get out for no one will stop what he is planning. What will you do now?`,
+        options: [
+            {text: `Take the treasure and leave`, navigateToIdx: 21},
+            {text: `Take the treasure and leave`, navigateToIdx: 21},
+            {text: `Take the treasure and leave`, navigateToIdx: 21}
+        ]
+    },
+    {
+        id: 53,
+        question: `You pull out a knife in a hurry and throw it at his staff but the mage reinforced by the dragon soul does not falter and finishes his spell. Your soul begins to spill out from you body and enter a purple sphere. You died`,
+        options: [
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0}
+        ]
+    },
+    {
+        id: 54,
+        question: `You ready your sword and fight the goblins and after a couple of minutes you are the one standing victorious. After the fight you look around and see 3 paths What will you do now?`,
+        options: [
+            {text: `Go left`, navigateToIdx: 4},
+            {text: `Go Right`, navigateToIdx: 5},
+            {text: `Go forward`, navigateToIdx: 12}
+        ]
+    },
+    {
+        id: 55,
+        question: `You try to negotiate with the goblins in a normal way by talking to them first but you slowly realize they do not speak the same language as you nor do they care what you have to say as they only care about self benefit. What will you do now? `,
+        options: [
+            {text: `Offer them gold`, navigateToIdx: 57},
+            {text: `Offer them rations`, navigateToIdx: 57},
+            {text: `fight`, navigateToIdx: 52}
+        ]
+    },
+    {
+        id: 56,
+        question: `You try your best to close the distance between you and mage as you try to rush in with your sword. As you almost get a swing off the mage had finished his spell and your soul had started to leak out of your body into a purple like sphere. The mage had taken your soul and absorbed it. You died`,
+        options: [
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0}
+        ]
+    },
+    {
+        id: 57,
+        question: `You try to offer the goblins something thinking they would at least not try to fight you if you gave them something but instead they surrounded you in the time you took to grab an offering of sorts. You are surrounded! You have no other choice, fight!!`,
+        options: [
+            {text: ``, navigateToIdx: 0},
+            {text: `Fight!!`, navigateToIdx: 54},
+            {text: ``, navigateToIdx: 0}
         ]
     }
 ]
@@ -374,11 +527,12 @@ const questionEl = document.querySelector(`#question`)
 const buttonA = document.querySelector(`#option-a`)
 const buttonB = document.querySelector(`#option-b`)
 const buttonC = document.querySelector(`#option-c`)
-
+const restartBu = document.querySelector(`#reset`)
 
 buttonA.addEventListener(`click`, handleClickButtonA)
 buttonB.addEventListener(`click`, handleClickButtonB)
 buttonC.addEventListener(`click`, handleClickButtonC)
+restartBu.addEventListener(`click`, init)
 
 let currPromptIdx = 0
 let currPrompt
