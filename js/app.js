@@ -156,9 +156,9 @@ const prompts = [
         id: 17,
         question: `As you try to hide from the scaly beast within his own domain you find yourself barely able to breathe. The tense air causes your heartbeat to rise as the beast ever approaches where you hide. In a moment faster than you can blink the dragon brings its maw down onto your body. You Died`,
         options: [
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 100},
+            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
@@ -192,45 +192,45 @@ const prompts = [
         id: 21,
         question: `You have made it out the dungeon!`,
         options: [
-            {text: `reset`, navigateToIdx: 0},
-            {text: `reset`, navigateToIdx: 0},
-            {text: `reset`, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 100},
+            {text: `restart`, navigateToIdx: 100},
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
         id: 22,
         question: `You find countless legendary artifacts and mounds of gold that can last you a lifetime. You take as much as you can and head for the exit.`,
         options: [
+            {text: ``, navigateToIdx: 100},
             {text: `take the exit`, navigateToIdx: 21},
-            {text: `take the exit`, navigateToIdx: 21},
-            {text: `take the exit`, navigateToIdx: 21}
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
         id: 23,
         question: `You find enough scales to fill your bag to the brim along with an elemental sack that was contained inside the dragon's throat`,
         options: [
+            {text: ``, navigateToIdx: 100},
             {text: `take the exit`, navigateToIdx: 21},
-            {text: `take the exit`, navigateToIdx: 21},
-            {text: `take the exit`, navigateToIdx: 21}
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
         id: 24,
         question: `You try talking to the dragon, though unfortunately dragon's aren't ones to want to talk to those that infiltrate their homes. The dragon ready's its breath and unleashes it upon your body reducing it to ash. You Died`,
         options: [
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 100},
+            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
         id: 25,
         question: `As you wait for help to come the trap fully ensnares you and drains the energy from you as you wait until eventually you hear the soft patter of small feet and lots of them. As a hunting group of goblins come and stab you to death. You Died`,
         options: [
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 100},
+            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
@@ -246,9 +246,9 @@ const prompts = [
         id: 27,
         question: `You try to wiggle out but as you do so the trap fully ensnares you and you are now unable to move at all. As you hear the soft patter of small feet and lots of them. As a hunting group of goblins come and stab you to death. You Died  `,
         options: [
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 100},
+            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
@@ -363,18 +363,18 @@ const prompts = [
         id: 40,
         question: `You take out some potions and offer it to the dragon as if the goblins were the true aggressors and not you. The dragon weakened takes them and accepts your generosity and gestures that you take some treasure and leave. What will you do now?`,
         options: [
+            {text: ``, navigateToIdx: 121},
             {text: `Take the treasure and leave`, navigateToIdx: 21},
-            {text: `Take the treasure and leave`, navigateToIdx: 21},
-            {text: `Take the treasure and leave`, navigateToIdx: 21}
+            {text: ``, navigateToIdx: 121}
         ]
     },
     {
         id: 41,
         question: `You run in charging with the goblins but as you finally reach the dragon you notice it had reeled back and readied its breath attack and as it unleashes it. You and the goblins were burnt to ash. You Died`,
         options: [
-            {text: `Reset`, navigateToIdx: 4},
-            {text: `Reset`, navigateToIdx: 12},
-            {text: `Reset`, navigateToIdx: 21}
+            {text: ``, navigateToIdx: 100},
+            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
@@ -399,8 +399,8 @@ const prompts = [
         id: 44,
         question: `You glare at the mage with a cold gaze and press forward knowing he will only slow you down when it comes down to killing the dragon. What will you do now?`,
         options: [
-            {text: `Go deeper into the dungeon`, navigateToIdx: 45},
             {text: ``, navigateToIdx: 100},
+            {text: `Go deeper into the dungeon`, navigateToIdx: 45},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -471,18 +471,18 @@ const prompts = [
         id: 52,
         question: `You bring up that if it were not for you he would not be alive. The mage stops his incantation and ponders your words. He motions you to get the treasure and get out for no one will stop what he is planning. What will you do now?`,
         options: [
+            {text: ``, navigateToIdx: 210},
             {text: `Take the treasure and leave`, navigateToIdx: 21},
-            {text: `Take the treasure and leave`, navigateToIdx: 21},
-            {text: `Take the treasure and leave`, navigateToIdx: 21}
+            {text: ``, navigateToIdx: 210}
         ]
     },
     {
         id: 53,
         question: `You pull out a knife in a hurry and throw it at his staff but the mage reinforced by the dragon soul does not falter and finishes his spell. Your soul begins to spill out from you body and enter a purple sphere. You died`,
         options: [
+            {text: ``, navigateToIdx: 100},
             {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
@@ -500,25 +500,25 @@ const prompts = [
         options: [
             {text: `Offer them gold`, navigateToIdx: 57},
             {text: `Offer them rations`, navigateToIdx: 57},
-            {text: `fight`, navigateToIdx: 52}
+            {text: `fight`, navigateToIdx: 54}
         ]
     },
     {
         id: 56,
         question: `You try your best to close the distance between you and mage as you try to rush in with your sword. As you almost get a swing off the mage had finished his spell and your soul had started to leak out of your body into a purple like sphere. The mage had taken your soul and absorbed it. You died`,
         options: [
+            {text: ``, navigateToIdx: 100},
             {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 100}
         ]
     },
     {
         id: 57,
         question: `You try to offer the goblins something thinking they would at least not try to fight you if you gave them something but instead they surrounded you in the time you took to grab an offering of sorts. You are surrounded! You have no other choice, fight!!`,
         options: [
-            {text: ``, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 100},
             {text: `Fight!!`, navigateToIdx: 54},
-            {text: ``, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 100}
         ]
     }
 ]
