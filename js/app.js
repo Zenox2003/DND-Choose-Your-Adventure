@@ -37,7 +37,7 @@ const prompts = [
     },
     {
         id: 4,
-        question: `You have chosen left and find yourself gliding through with no troubles as you find a room gleaming with light, as you find a treasure room! What will you do now? `,
+        question: `You find yourself gliding through a path with no troubles as you find a room gleaming with light, as you find a treasure room! What will you do now? `,
         options: [
             {text: `loot the chest`, navigateToIdx: 7},
             {text: `check for traps`, navigateToIdx: 8},
@@ -46,7 +46,7 @@ const prompts = [
     },
     {
         id: 5,
-        question: `You have chosen right and are faced with many makeshift spikes and traps. You have been ensnared in a trap! How will you escape? `,
+        question: `You are faced with many makeshift spikes and traps. You have been ensnared in a trap! How will you escape? `,
         options: [
             {text: `Attempt to wiggle out`, navigateToIdx: 27},
             {text: `Attempt to cut yourself out`, navigateToIdx: 26},
@@ -55,7 +55,7 @@ const prompts = [
     },
     {
         id: 6,
-        question: `You have chosen forward and as you walk deeper into the dungeon soft sounds of pattering feet grow louder as you venture in as you come face to face with a pack of goblins! What do you do!?`,
+        question: `You walk deeper into the dungeon soft sounds of pattering feet grow louder as you venture in as you come face to face with a pack of goblins! What do you do!?`,
         options: [
             {text: `fight`, navigateToIdx: 7},
             {text: `run`, navigateToIdx: 8},
@@ -192,9 +192,9 @@ const prompts = [
         id: 21,
         question: `You have cleared the dungeon!`,
         options: [
-            {text: `left`, navigateToIdx: 21},
-            {text: `right`, navigateToIdx: 21},
-            {text: `forward`, navigateToIdx: 21}
+            {text: `reset`, navigateToIdx: 0},
+            {text: `reset`, navigateToIdx: 0},
+            {text: `reset`, navigateToIdx: 0}
         ]
     },
     {
@@ -273,81 +273,81 @@ const prompts = [
         id: 30,
         question: `As you start to gather intelligence about the sounds you quickly come to realize that it is a pack of goblins within a camp they made in the dungeon. They are celebrating thier newest catch, a fellow adventurer. As their tribe leader takes the first bite of the newly cooked catch. What will you do?`,
         options: [
-            {text: `Barge in and start swinging`, navigateToIdx: 100},
+            {text: `Barge in and start swinging`, navigateToIdx: 34},
             {text: `Try to talk`, navigateToIdx: 32},
             {text: `Go back`, navigateToIdx: 2}
         ]
     },
     {
         id: 31,
-        question: `You choose forward`,
+        question: `You grab one of your many knives and line up a throw, straight into the leaders throat. As the knife slices through the air and with a thump lands into his throat causing him to collapse and take his final breath. What will you do now?`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Claim yourself as new tribe leader`, navigateToIdx: 33},
+            {text: `Cull the rest of them`, navigateToIdx: 34},
+            {text: `Sneak into the shadows`, navigateToIdx: 35}
         ]
     },
     {
         id: 32,
-        question: `You have cleared the dungeon!`,
+        question: `You approach and clear your throat causing the music to stop and chatter to silence, as you attempt to start to converse with goblins. Then a thought crosses your mind, they can't understand you and you can't understand them. As they ready themselves for a fight. What will you do now?`,
         options: [
-            {text: `left`, navigateToIdx: 100},
-            {text: `right`, navigateToIdx: 100},
-            {text: `forward`, navigateToIdx: 100}
+            {text: `fight`, navigateToIdx: 34},
+            {text: `target the leader`, navigateToIdx: 31},
+            {text: `Try to escape`, navigateToIdx: 100}
         ]
     },
     {
         id: 33,
-        question: `You choose forward`,
+        question: `You come forward and proclaim yourself the new leader of the goblins as they keep watching you in fear as you have just killed thier strongest. They start to get on thier knees and respect that you are now their new leader. What will you do?`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Command them to find the dragon`, navigateToIdx: 36},
+            {text: `Slaughter the goblins`, navigateToIdx: 5},
+            {text: `Inspect the camp`, navigateToIdx: 6}
         ]
     },
     {
         id: 34,
-        question: `You have cleared the dungeon!`,
+        question: `You ready your weapon and sprint in and start swinging with bravery and courage behind every swing. The blade singing and dripping with blood as you have killed the entire camp. Exhausted you take a while to rest and clean yourself up. You see two options for paths or you could take the gold and leave. What will you do now?`,
         options: [
-            {text: `left`, navigateToIdx: 100},
-            {text: `right`, navigateToIdx: 100},
-            {text: `forward`, navigateToIdx: 100}
+            {text: `Go left `, navigateToIdx: 4},
+            {text: `Go right`, navigateToIdx: 12},
+            {text: `Loot and Scoot`, navigateToIdx: 21}
         ]
     },
     {
         id: 35,
-        question: `You choose forward`,
+        question: `You slip into the shadows faster than any goblin can spot you as you are now unseen and unheard. You watch as the goblins start to grow furious and while some others mourn the loss of thier leader. What will you do now?`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Pick them off one by one`, navigateToIdx: 37},
+            {text: `Fight them`, navigateToIdx: 34},
+            {text: `Stay stealthed`, navigateToIdx: 38}
         ]
     },
     {
         id: 36,
-        question: `You have cleared the dungeon!`,
+        question: `You command the goblins to find the dragon, as they lead you to a secret passage that goes straight into the lair of the scaled beast. What will you do?`,
         options: [
-            {text: `left`, navigateToIdx: 100},
-            {text: `right`, navigateToIdx: 100},
-            {text: `forward`, navigateToIdx: 100}
+            {text: `Command them to fight for you`, navigateToIdx: 100},
+            {text: `Fight the dragon yourself`, navigateToIdx: 100},
+            {text: `Fight with the goblins`, navigateToIdx: 100}
         ]
     },
     {
         id: 37,
-        question: `You choose forward`,
+        question: `You wait in the shadows and you watch them one by one pass by as each time they pass by you throw another knife killing them. As time passes their numbers dwindle to none. You search the room and find 2 paths and enough gold to call it a day. What will you do now?`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Go left`, navigateToIdx: 4},
+            {text: `Go right`, navigateToIdx: 12},
+            {text: `Loot and leave`, navigateToIdx: 21}
         ]
     },
     {
         id: 38,
-        question: `You have cleared the dungeon!`,
+        question: `You keep completely silent as you watch the goblin camp roar to life as they march down the path where you came from leaving the camp empty. You enter the camp and find enough gold to retire for the day along with 2 paths. What will you do now?`,
         options: [
-            {text: `left`, navigateToIdx: 100},
-            {text: `right`, navigateToIdx: 100},
-            {text: `forward`, navigateToIdx: 100}
+            {text: `Go left`, navigateToIdx: 4},
+            {text: `Go right`, navigateToIdx: 12},
+            {text: `Loot and leave`, navigateToIdx: 21}
         ]
     },
     {
