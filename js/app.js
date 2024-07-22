@@ -48,9 +48,9 @@ const prompts = [
         id: 5,
         question: `You have chosen right and are faced with many makeshift spikes and traps. You have been ensnared in a trap! How will you escape? `,
         options: [
-            {text: `left`, navigateToIdx: 7},
-            {text: `right`, navigateToIdx: 8},
-            {text: `forward`, navigateToIdx: 9}
+            {text: `Attempt to wiggle out`, navigateToIdx: 27},
+            {text: `Attempt to cut yourself out`, navigateToIdx: 26},
+            {text: `Wait for help`, navigateToIdx: 25}
         ]
     },
     {
@@ -73,25 +73,25 @@ const prompts = [
     },
     {
         id: 8,
-        question: `As you carefully inspect the chest for traps there are none to be found and with this new found knowledge you loot the chest with no worries and find yourself richer. What will you do now?`,
+        question: `As you carefully inspect the chest for traps there are none to be found. What will you do now?`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Loot the chest`, navigateToIdx: 7},
+            {text: `Go right`, navigateToIdx: 11},
+            {text: `Go forward`, navigateToIdx: 12}
         ]
     },
     {
         id: 9,
         question: `You leave the chest behind as you are not interested in material gain, only the journey that lays before you. What will you do now? `,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 12}
+            {text: `Inspect the room`, navigateToIdx: 10},
+            {text: `Go right`, navigateToIdx: 11},
+            {text: `Go forward`, navigateToIdx: 12}
         ]
     },
     {
         id: 10,
-        question: `You scan the room and not only was there a chest but a sword pulsing with arcane energy almost as if it crackles with the power to wield lightning from the heaviest of storms, just what you need to fend off foes! With closer inspection also you notice in the room there are only 2 paths to take.`,
+        question: `You scan the room and not only was there a chest but a sword pulsing with arcane energy almost as if it crackles with the power to wield lightning from the heaviest of storms, just what you need to fend off foes! With closer inspection you also notice in the room that there are only 2 paths to take.`,
         options: [
             {text: `Attune to the sword`, navigateToIdx: 13},
             {text: `Go right`, navigateToIdx: 11},
@@ -100,11 +100,11 @@ const prompts = [
     },
     {
         id: 11,
-        question: `You choose forward`,
+        question: `As you open the door you notice something fast with a glint coming towards you as you walk. A axe trap awaited you and hit directly into your heart. You Died`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0}
         ]
     },
     {
@@ -121,8 +121,8 @@ const prompts = [
         question: `As you take the time to make this sword your own you gain the power to cast lightning from the sword! With the energy from the sword a secret path opens up on the left side of the room that was not there before.`,
         options: [
             {text: `Take the secret path`, navigateToIdx: 14},
-            {text: `Go right`, navigateToIdx: 8},
-            {text: `Go forward`, navigateToIdx: 9}
+            {text: `Go right`, navigateToIdx: 11},
+            {text: `Go forward`, navigateToIdx: 12}
         ]
     },
     {
@@ -138,7 +138,7 @@ const prompts = [
         id: 15,
         question: `As you concentrate on the newfound powers bestowed to you by this magical sword, a heavy and thunderous crack of lightning emits from the sword and cuts into the dragon's throat. With a cry and a gurgled roar the dragon grows in anger but seems to be extremely wounded by this. The sword now exhausted seems to lose it's crackling arcane energy. What will you do!`,
         options: [
-            {text: `Run in and swing your sword`, navigateToIdx: 18},
+            {text: `Fight`, navigateToIdx: 18},
             {text: `Attempt to regain your arcane energy`, navigateToIdx: 19},
             {text: `Wind up your arm and throw the sword`, navigateToIdx: 20}
         ]
@@ -154,29 +154,29 @@ const prompts = [
     },
     {
         id: 17,
-        question: `You choose Right`,
+        question: `As you try to hide from the scaly beast within his own domain you find yourself barely able to breathe. The tense air causes your heartbeat to rise as the beast ever approaches where you hide. In a moment faster than you can blink the dragon brings its maw down onto your body. You Died`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0}
         ]
     },
     {
         id: 18,
-        question: `You choose forward`,
+        question: `You sprint forward with your legs feeling the heaviest they ever have as you clench and raise your arms up high as you bring down your sword with all your might. The scales cracking with the force behind your mighty swing and finally the sword cuts clean into the dragon's neck, finally making dragon take it's last breath as the head of the beast collapses to the ground causing a big shake`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Leave the dungeon`, navigateToIdx: 21},
+            {text: `Loot the dragon's hoard`, navigateToIdx: 22},
+            {text: `Loot the dragon`, navigateToIdx: 23}
         ]
     },
     {
         id: 19,
-        question: `You have cleared the dungeon!`,
+        question: `You focus on trying to get your arcane power back but as you start to get drowned in your own focus as you get snapped back to reality as the dragon unleashes a furious roar. You don't have time to focus! What will you do? `,
         options: [
-            {text: `left`, navigateToIdx: 100},
-            {text: `right`, navigateToIdx: 100},
-            {text: `forward`, navigateToIdx: 100}
+            {text: `Hide`, navigateToIdx: 17},
+            {text: `Fight`, navigateToIdx: 18},
+            {text: `Talk to the dragon`, navigateToIdx: 24}
         ]
     },
     {
@@ -208,24 +208,78 @@ const prompts = [
     },
     {
         id: 23,
-        question: `Y`,
+        question: `You find enough scales to fill your bag to the brim along with an elemental sack that was contained inside the dragon's throat`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 12}
+            {text: `take the exit`, navigateToIdx: 21},
+            {text: `take the exit`, navigateToIdx: 21},
+            {text: `take the exit`, navigateToIdx: 21}
         ]
     },
     {
         id: 24,
-        question: `You choose Right`,
+        question: `You try talking to the dragon, though unfortunately dragon's aren't ones to want to talk to those that infiltrate their homes. The dragon ready's its breath and unleashes it upon your body reducing it to ash. You Died`,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0}
         ]
     },
     {
         id: 25,
+        question: `As you wait for help to come the trap fully ensnares you and drains the energy from you as you wait until eventually you hear the soft patter of small feet and lots of them. As a hunting group of goblins come and stab you to death. You Died`,
+        options: [
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0}
+        ]
+    },
+    {
+        id: 26,
+        question: `You quickly realize that this trap could be your death, in a flash you grab your skinning knife and slash away at the rope and vines that ensare you before they could get any tighter as you free yourself. What will you do?`,
+        options: [
+            {text: `Explore`, navigateToIdx: 28},
+            {text: `Go back`, navigateToIdx: 2},
+            {text: ``, navigateToIdx: 100}
+        ]
+    },
+    {
+        id: 27,
+        question: `You try to wiggle out but as you do so the trap fully ensnares you and you are now unable to move at all. As you hear the soft patter of small feet and lots of them. As a hunting group of goblins come and stab you to death. You Died  `,
+        options: [
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0},
+            {text: `Reset`, navigateToIdx: 0}
+        ]
+    },
+    {
+        id: 28,
+        question: `You explore the path as you venture deeper into the right, hearing sounds of hideous laughter and small instruments being played along with the smell of cooking flesh. What will you do?`,
+        options: [
+            {text: `Investigate`, navigateToIdx: 30},
+            {text: `Sneak`, navigateToIdx: 29},
+            {text: `Go back`, navigateToIdx: 2}
+        ]
+    },
+    {
+        id: 29,
+        question: `You sneak up on the newfound sounds and smells by silencing your steps the best you can. As you approach you find yourself in a small camp composed of goblins and thier tribe leader feasting on something you can't make out. What will you do?`,
+        options: [
+            {text: `Attempt to assasinate the leader`, navigateToIdx: 31},
+            {text: `Try to talk`, navigateToIdx: 32},
+            {text: `Go back`, navigateToIdx: 2}
+        ]
+    },
+    {
+        id: 30,
+        question: `As you start to gather intelligence about the sounds you quickly come to realize that it is a pack of goblins within a camp they made in the dungeon. They are celebrating thier newest catch, a fellow adventurer. As their tribe leader takes the first bite of the newly cooked catch. What will you do?`,
+        options: [
+            {text: `Barge in and start swinging`, navigateToIdx: 100},
+            {text: `Try to talk`, navigateToIdx: 32},
+            {text: `Go back`, navigateToIdx: 2}
+        ]
+    },
+    {
+        id: 31,
         question: `You choose forward`,
         options: [
             {text: `left`, navigateToIdx: 4},
@@ -234,7 +288,79 @@ const prompts = [
         ]
     },
     {
-        id: 26,
+        id: 32,
+        question: `You have cleared the dungeon!`,
+        options: [
+            {text: `left`, navigateToIdx: 100},
+            {text: `right`, navigateToIdx: 100},
+            {text: `forward`, navigateToIdx: 100}
+        ]
+    },
+    {
+        id: 33,
+        question: `You choose forward`,
+        options: [
+            {text: `left`, navigateToIdx: 4},
+            {text: `right`, navigateToIdx: 5},
+            {text: `forward`, navigateToIdx: 6}
+        ]
+    },
+    {
+        id: 34,
+        question: `You have cleared the dungeon!`,
+        options: [
+            {text: `left`, navigateToIdx: 100},
+            {text: `right`, navigateToIdx: 100},
+            {text: `forward`, navigateToIdx: 100}
+        ]
+    },
+    {
+        id: 35,
+        question: `You choose forward`,
+        options: [
+            {text: `left`, navigateToIdx: 4},
+            {text: `right`, navigateToIdx: 5},
+            {text: `forward`, navigateToIdx: 6}
+        ]
+    },
+    {
+        id: 36,
+        question: `You have cleared the dungeon!`,
+        options: [
+            {text: `left`, navigateToIdx: 100},
+            {text: `right`, navigateToIdx: 100},
+            {text: `forward`, navigateToIdx: 100}
+        ]
+    },
+    {
+        id: 37,
+        question: `You choose forward`,
+        options: [
+            {text: `left`, navigateToIdx: 4},
+            {text: `right`, navigateToIdx: 5},
+            {text: `forward`, navigateToIdx: 6}
+        ]
+    },
+    {
+        id: 38,
+        question: `You have cleared the dungeon!`,
+        options: [
+            {text: `left`, navigateToIdx: 100},
+            {text: `right`, navigateToIdx: 100},
+            {text: `forward`, navigateToIdx: 100}
+        ]
+    },
+    {
+        id: 39,
+        question: `You choose forward`,
+        options: [
+            {text: `left`, navigateToIdx: 4},
+            {text: `right`, navigateToIdx: 5},
+            {text: `forward`, navigateToIdx: 6}
+        ]
+    },
+    {
+        id: 40,
         question: `You have cleared the dungeon!`,
         options: [
             {text: `left`, navigateToIdx: 100},
