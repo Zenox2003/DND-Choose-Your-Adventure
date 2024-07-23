@@ -529,7 +529,7 @@ const buttonB = document.querySelector(`#option-b`)
 const buttonC = document.querySelector(`#option-c`)
 const restartBu = document.querySelector(`#reset`)
 const gateImg = document.createElement(`img`);
-Image.src = `https://cdn1.epicgames.com/ue/product/Screenshot/Door6-1920x1080-53f0b84a2c5d0301a48a41ffca467dd2.png?resize=1&w=1920`
+gateImg.src = `https://cdn1.epicgames.com/ue/product/Screenshot/Door6-1920x1080-53f0b84a2c5d0301a48a41ffca467dd2.png?resize=1&w=1920`
 
 
 
@@ -583,7 +583,7 @@ function winner(){
 }
 function checkForCompletion() {
     if (win) {
-    winner()    
+        winner()    
     }
 }
 
