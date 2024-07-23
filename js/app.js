@@ -157,7 +157,7 @@ const prompts = [
         question: `As you try to hide from the scaly beast within his own domain you find yourself barely able to breathe. The tense air causes your heartbeat to rise as the beast ever approaches where you hide. In a moment faster than you can blink the dragon brings its maw down onto your body. You Died`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -172,7 +172,7 @@ const prompts = [
     },
     {
         id: 19,
-        question: `You focus on trying to get your arcane power back but as you start to get drowned in your own focus as you get snapped back to reality as the dragon unleashes a furious roar. You don't have time to focus! What will you do? `,
+        question: `You focus on trying to get your arcane power back but you start to get drowned in your own focus as you get snapped back to reality as the dragon unleashes a furious roar. You don't have time to focus! What will you do? `,
         options: [
             {text: `Hide`, navigateToIdx: 17},
             {text: `Fight`, navigateToIdx: 18},
@@ -193,7 +193,7 @@ const prompts = [
         question: `You have made it out the dungeon!`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `restart`, navigateToIdx: 100},
+            {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -220,7 +220,7 @@ const prompts = [
         question: `You try talking to the dragon, though unfortunately dragon's aren't ones to want to talk to those that infiltrate their homes. The dragon ready's its breath and unleashes it upon your body reducing it to ash. You Died`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -229,7 +229,7 @@ const prompts = [
         question: `As you wait for help to come the trap fully ensnares you and drains the energy from you as you wait until eventually you hear the soft patter of small feet and lots of them. As a hunting group of goblins come and stab you to death. You Died`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -247,7 +247,7 @@ const prompts = [
         question: `You try to wiggle out but as you do so the trap fully ensnares you and you are now unable to move at all. As you hear the soft patter of small feet and lots of them. As a hunting group of goblins come and stab you to death. You Died  `,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -481,7 +481,7 @@ const prompts = [
         question: `You pull out a knife in a hurry and throw it at his staff but the mage reinforced by the dragon soul does not falter and finishes his spell. Your soul begins to spill out from you body and enter a purple sphere. You died`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `Reset`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -508,7 +508,7 @@ const prompts = [
         question: `You try your best to close the distance between you and mage as you try to rush in with your sword. As you almost get a swing off the mage had finished his spell and your soul had started to leak out of your body into a purple like sphere. The mage had taken your soul and absorbed it. You died`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `Reset`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -540,6 +540,7 @@ restartBu.addEventListener(`click`, init)
 
 let currPromptIdx = 0
 let currPrompt
+let win = false
 
 function init() {
     currPromptIdx = 0
@@ -551,14 +552,38 @@ init()
 
 function render() {
     questionEl.textContent = currPrompt.question
-    buttonA.textContent = currPrompt.options[0].text
-    buttonB.textContent = currPrompt.options[1].text
-    buttonC.textContent = currPrompt.options[2].text
+    if (currPrompt.options[0].text === "") {
+        buttonA.style.visibility = "hidden"
+    } else {
+        buttonA.textContent = currPrompt.options[0].text
+        buttonA.style.visibility = "visible"  
+    }
+    if (currPrompt.options[1].text === "") {
+        buttonB.style.visibility = "hidden"
+    } else {
+        buttonB.textContent = currPrompt.options[1].text
+        buttonB.style.visibility = "visible"  
+    }
+    if (currPrompt.options[2].text === "") {
+        buttonC.style.visibility = "hidden"
+    } else {
+        buttonC.textContent = currPrompt.options[2].text
+        buttonC.style.visibility = "visible"  
+    }
+    // buttonA.textContent = currPrompt.options[0].text
+    // buttonB.textContent = currPrompt.options[1].text
+    // buttonC.textContent = currPrompt.options[2].text
+
 }
 
+function winner(){
+    buttonA.removeEventListener(`click`, handleClickButtonA)
+    buttonB.removeEventListener(`click`, handleClickButtonB)
+    buttonC.removeEventListener(`click`, handleClickButtonC)
+}
 function checkForCompletion() {
-    if (prompts.question = `You have cleared the dungeon!`) {
-        return
+    if (win) {
+    winner()    
     }
 }
 
