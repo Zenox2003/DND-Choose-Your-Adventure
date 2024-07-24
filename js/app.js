@@ -6,7 +6,8 @@ const prompts = [
             {text: `left`, navigateToIdx: 1},
             {text: `right`, navigateToIdx: 2},
             {text: `forward`, navigateToIdx: 3}
-        ]
+        ],
+        imageSrc: `url(https://cdn1.epicgames.com/ue/product/Screenshot/Door6-1920x1080-53f0b84a2c5d0301a48a41ffca467dd2.png?resize=1&w=1920)`
     },
     {
         id: 1,
@@ -52,7 +53,8 @@ const prompts = [
             {text: `Attempt to wiggle out`, navigateToIdx: 27},
             {text: `Attempt to cut yourself out`, navigateToIdx: 26},
             {text: `Wait for help`, navigateToIdx: 25}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image8.jpg)`
     },
     {
         id: 6,
@@ -191,10 +193,10 @@ const prompts = [
     },
     {
         id: 21,
-        question: `You have made it out of the dungeon!`,
+        question: `You have made it out of the dungeon! You win!`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `test`, navigateToIdx: 19},
+            {text: ``, navigateToIdx: 19},
             {text: ``, navigateToIdx: 19}
         ]
     },
@@ -542,33 +544,31 @@ restartBu.addEventListener(`click`, init)
 let currPromptIdx = 0
 let currPrompt
 let winner = false
-
+const winId = 21
 /*----------------------functions---------------*/
 
 function init() {
     currPromptIdx = 0
     currPrompt = prompts[currPromptIdx]
+    renderBackground()
     renderQuestions()
 }
 
 init()
 
 function checkForWinner() {
-    console.log(currPrompt.question);
-    if (currPrompt.question === "You have made it out of the dungeon!") {
+    if (currPrompt.id === winId) {
         winner = true
-        console.log(winner);
     }
 }
 
 function renderBackground() {
-    bodyEl.style.backgroundImage = prompts[currPromptIdx].imageSrc
+    if (prompts[currPromptIdx].imageSrc != undefined) {
+        bodyEl.style.backgroundImage = prompts[currPromptIdx].imageSrc
+    }
 }
 
 function renderQuestions() {
-    if (winner) {
-        return
-    }
     questionEl.textContent = currPrompt.question
     if (currPrompt.options[0].text === "") {
         buttonA.style.visibility = "hidden"
