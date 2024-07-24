@@ -144,7 +144,7 @@ const prompts = [
         question: `The secret path has lead you straight to dragon's lair! Once stepping into it, the scaly beast awakens with a furious roar, what will you do now!`,
         options: [
             {text: `Use your newfound lightning`, navigateToIdx: 15},
-            {text: `Run and swing with your sword`, navigateToIdx: 16},
+            {text: `Run and swing with your sword`, navigateToIdx: 18},
             {text: `Hide`, navigateToIdx: 17}
         ],
         imageSrc: `url(../assets/images/image4.jpg)`
@@ -163,9 +163,9 @@ const prompts = [
         id: 16,
         question: `You leave the chest behind as you are not interested in material gain, only the journey that lays before you. What will you do now? `,
         options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 11},
-            {text: `forward`, navigateToIdx: 12}
+            {text: ``, navigateToIdx: 4},
+            {text: ``, navigateToIdx: 11},
+            {text: ``, navigateToIdx: 12}
         ],
         imageSrc: `url(../assets/images/image1.jpg)`
     },
