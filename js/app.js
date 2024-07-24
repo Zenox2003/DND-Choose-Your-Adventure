@@ -44,7 +44,8 @@ const prompts = [
             {text: `loot the chest`, navigateToIdx: 7},
             {text: `check for traps`, navigateToIdx: 8},
             {text: `leave it`, navigateToIdx: 9}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image5.jpg)`
     },
     {
         id: 5,
