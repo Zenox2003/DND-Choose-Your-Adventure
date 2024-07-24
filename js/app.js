@@ -102,9 +102,9 @@ const prompts = [
         id: 11,
         question: `As you open the door you notice something fast with a glint coming towards you as you walk. A axe trap awaited you and hit directly into your heart. You Died`,
         options: [
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0},
-            {text: `Reset`, navigateToIdx: 0}
+            {text: ``, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0}
         ]
     },
     {
@@ -193,8 +193,8 @@ const prompts = [
         question: `You have made it out the dungeon!`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: ``, navigateToIdx: 100},
-            {text: ``, navigateToIdx: 100}
+            {text: `test`, navigateToIdx: 19},
+            {text: ``, navigateToIdx: 19}
         ]
     },
     {
@@ -373,7 +373,7 @@ const prompts = [
         question: `You run in charging with the goblins but as you finally reach the dragon you notice it had reeled back and readied its breath attack and as it unleashes it. You and the goblins were burnt to ash. You Died`,
         options: [
             {text: ``, navigateToIdx: 100},
-            {text: `Restart`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ]
     },
@@ -522,35 +522,44 @@ const prompts = [
         ]
     }
 ]
-
+/*------------------------Cached Element References---------------------*/
 const questionEl = document.querySelector(`#question`)
 const buttonA = document.querySelector(`#option-a`)
 const buttonB = document.querySelector(`#option-b`)
 const buttonC = document.querySelector(`#option-c`)
 const restartBu = document.querySelector(`#reset`)
-const gateImg = document.createElement(`img`);
-gateImg.src = `https://cdn1.epicgames.com/ue/product/Screenshot/Door6-1920x1080-53f0b84a2c5d0301a48a41ffca467dd2.png?resize=1&w=1920`
 
-
-
+/*-----------------------event listeners------------------*/
 buttonA.addEventListener(`click`, handleClickButtonA)
 buttonB.addEventListener(`click`, handleClickButtonB)
 buttonC.addEventListener(`click`, handleClickButtonC)
 restartBu.addEventListener(`click`, init)
 
+/*-----------------------Variables-------------------*/
 let currPromptIdx = 0
 let currPrompt
-let win = false
+let winner = false
+
+/*----------------------functions---------------*/
 
 function init() {
     currPromptIdx = 0
     currPrompt = prompts[currPromptIdx]
-    render()
+    renderQuestions()
 }
 
 init()
 
-function render() {
+function checkForWinner() {
+    if (currPrompt.text === "You have made it out of the dungeon!") {
+         winner = true
+    }
+}
+
+function renderQuestions() {
+    if (winner) {
+        return
+    }
     questionEl.textContent = currPrompt.question
     if (currPrompt.options[0].text === "") {
         buttonA.style.visibility = "hidden"
@@ -570,42 +579,25 @@ function render() {
         buttonC.textContent = currPrompt.options[2].text
         buttonC.style.visibility = "visible"  
     }
-    // buttonA.textContent = currPrompt.options[0].text
-    // buttonB.textContent = currPrompt.options[1].text
-    // buttonC.textContent = currPrompt.options[2].text
-
-}
-
-
-
-function winner(){
-    buttonA.removeEventListener(`click`, handleClickButtonA)
-    buttonB.removeEventListener(`click`, handleClickButtonB)
-    buttonC.removeEventListener(`click`, handleClickButtonC)
-}
-function checkForCompletion() {
-    if (win) {
-        winner()    
-    }
 }
 
 function handleClickButtonA() {
     currPromptIdx = currPrompt.options[0].navigateToIdx
     currPrompt = prompts[currPromptIdx]
-    checkForCompletion()
-    render()
+    checkForWinner()
+    renderQuestions()
 }
 
 function handleClickButtonB() {
     currPromptIdx = currPrompt.options[1].navigateToIdx
     currPrompt = prompts[currPromptIdx]
-    checkForCompletion()
-    render()
+    checkForWinner()
+    renderQuestions()
 }
 
 function handleClickButtonC() {
     currPromptIdx = currPrompt.options[2].navigateToIdx
     currPrompt = prompts[currPromptIdx]
-    checkForCompletion()
-    render()
+    checkForWinner()
+    renderQuestions()
 }
