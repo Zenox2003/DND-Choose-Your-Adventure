@@ -24,7 +24,8 @@ const prompts = [
             {text: `left`, navigateToIdx: 4},
             {text: `right`, navigateToIdx: 5},
             {text: `forward`, navigateToIdx: 6}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image1.jpg)`
     },
     {
         id: 3,
@@ -190,7 +191,7 @@ const prompts = [
     },
     {
         id: 21,
-        question: `You have made it out the dungeon!`,
+        question: `You have made it out of the dungeon!`,
         options: [
             {text: ``, navigateToIdx: 100},
             {text: `test`, navigateToIdx: 19},
@@ -510,7 +511,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `assets/images/fantasy adventure start.jpg`
     },
     {
         id: 57,
@@ -528,6 +530,7 @@ const buttonA = document.querySelector(`#option-a`)
 const buttonB = document.querySelector(`#option-b`)
 const buttonC = document.querySelector(`#option-c`)
 const restartBu = document.querySelector(`#reset`)
+const bodyEl = document.querySelector(`body`)
 
 /*-----------------------event listeners------------------*/
 buttonA.addEventListener(`click`, handleClickButtonA)
@@ -551,9 +554,15 @@ function init() {
 init()
 
 function checkForWinner() {
-    if (currPrompt.text === "You have made it out of the dungeon!") {
-         winner = true
+    console.log(currPrompt.question);
+    if (currPrompt.question === "You have made it out of the dungeon!") {
+        winner = true
+        console.log(winner);
     }
+}
+
+function renderBackground() {
+    bodyEl.style.backgroundImage = prompts[currPromptIdx].imageSrc
 }
 
 function renderQuestions() {
@@ -585,6 +594,7 @@ function handleClickButtonA() {
     currPromptIdx = currPrompt.options[0].navigateToIdx
     currPrompt = prompts[currPromptIdx]
     checkForWinner()
+    renderBackground()
     renderQuestions()
 }
 
@@ -592,6 +602,7 @@ function handleClickButtonB() {
     currPromptIdx = currPrompt.options[1].navigateToIdx
     currPrompt = prompts[currPromptIdx]
     checkForWinner()
+    renderBackground()
     renderQuestions()
 }
 
@@ -599,5 +610,6 @@ function handleClickButtonC() {
     currPromptIdx = currPrompt.options[2].navigateToIdx
     currPrompt = prompts[currPromptIdx]
     checkForWinner()
+    renderBackground()
     renderQuestions()
 }
