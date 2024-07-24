@@ -576,6 +576,8 @@ function render() {
 
 }
 
+
+
 function winner(){
     buttonA.removeEventListener(`click`, handleClickButtonA)
     buttonB.removeEventListener(`click`, handleClickButtonB)
