@@ -11,31 +11,33 @@ const prompts = [
     },
     {
         id: 1,
-        question: `You choose Left and have ventured deeper into the dungeon, which path shall you choose now? `,
-        options: [
-            {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
-            {text: `forward`, navigateToIdx: 6}
-        ]
-    },
-    {
-        id: 2,
-        question: `You choose Right and have ventured deeper into the dungeon, which path shall you choose now?`,
+        question: `You ventured into the dungeon, which path shall you choose now? `,
         options: [
             {text: `left`, navigateToIdx: 4},
             {text: `right`, navigateToIdx: 5},
             {text: `forward`, navigateToIdx: 6}
         ],
-        imageSrc: `url(../assets/images/image1.jpg)`
+        imageSrc: `url(../assets/images/image3.jpg)`
     },
     {
-        id: 3,
-        question: `You choose forward and have ventured deeper into the dungeon, which path shall you choose now?`,
+        id: 2,
+        question: `You have ventured into the dungeon, which path shall you choose now?`,
         options: [
             {text: `left`, navigateToIdx: 4},
             {text: `right`, navigateToIdx: 5},
             {text: `forward`, navigateToIdx: 6}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image3.jpg)`
+    },
+    {
+        id: 3,
+        question: `You have ventured into the dungeon, which path shall you choose now?`,
+        options: [
+            {text: `left`, navigateToIdx: 4},
+            {text: `right`, navigateToIdx: 5},
+            {text: `forward`, navigateToIdx: 6}
+        ],
+        imageSrc: `url(../assets/images/image3.jpg)`
     },
     {
         id: 4,
@@ -59,12 +61,13 @@ const prompts = [
     },
     {
         id: 6,
-        question: `You walk deeper into the dungeon soft sounds of pattering feet grow louder as you venture in as you come face to face with a pack of goblins! What do you do!?`,
+        question: `You walk deeper into the dungeon, soft sounds of feet grow louder as you come face to face with a pack of goblins! What will do you do!?`,
         options: [
             {text: `fight`, navigateToIdx: 54},
-            {text: `run`, navigateToIdx: 0},
+            {text: ``, navigateToIdx: 0},
             {text: `negotiate`, navigateToIdx: 55}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 7,
@@ -73,7 +76,8 @@ const prompts = [
             {text: `Inspect the room`, navigateToIdx: 10},
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image5.jpg)`
     },
     {
         id: 8,
@@ -82,16 +86,18 @@ const prompts = [
             {text: `Loot the chest`, navigateToIdx: 7},
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image5.jpg)`
     },
     {
         id: 9,
         question: `You leave the chest behind as you are not interested in material gain, only the journey that lays before you. What will you do now? `,
         options: [
-            {text: `Inspect the room`, navigateToIdx: 10},
+            {text: ``, navigateToIdx: 0},
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image5.jpg)`
     },
     {
         id: 10,
@@ -100,7 +106,8 @@ const prompts = [
             {text: `Attune to the sword`, navigateToIdx: 13},
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image5.jpg)`
     },
     {
         id: 11,
@@ -109,7 +116,8 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 0}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image10.jpg)`
     },
     {
         id: 12,
@@ -118,7 +126,8 @@ const prompts = [
             {text: `Help them with the few health potions you have`, navigateToIdx: 42},
             {text: `Take thier staff as they no longer need it`, navigateToIdx: 43},
             {text: `Leave them to bleed out as you venture forward`, navigateToIdx: 44}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image2.jpg)`
     },
     {
         id: 13,
@@ -127,7 +136,8 @@ const prompts = [
             {text: `Take the secret path`, navigateToIdx: 14},
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image5.jpg)`
     },
     {
         id: 14,
@@ -136,7 +146,8 @@ const prompts = [
             {text: `Use your newfound lightning`, navigateToIdx: 15},
             {text: `Run and swing with your sword`, navigateToIdx: 16},
             {text: `Hide`, navigateToIdx: 17}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 15,
@@ -145,16 +156,18 @@ const prompts = [
             {text: `Fight`, navigateToIdx: 18},
             {text: `Attempt to regain your arcane energy`, navigateToIdx: 19},
             {text: `Wind up your arm and throw the sword`, navigateToIdx: 20}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 16,
         question: `You leave the chest behind as you are not interested in material gain, only the journey that lays before you. What will you do now? `,
         options: [
             {text: `left`, navigateToIdx: 4},
-            {text: `right`, navigateToIdx: 5},
+            {text: `right`, navigateToIdx: 11},
             {text: `forward`, navigateToIdx: 12}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image1.jpg)`
     },
     {
         id: 17,
@@ -163,7 +176,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image10.jpg)`
     },
     {
         id: 18,
@@ -172,7 +186,8 @@ const prompts = [
             {text: `Leave the dungeon`, navigateToIdx: 21},
             {text: `Loot the dragon's hoard`, navigateToIdx: 22},
             {text: `Loot the dragon`, navigateToIdx: 23}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 19,
@@ -181,7 +196,8 @@ const prompts = [
             {text: `Hide`, navigateToIdx: 17},
             {text: `Fight`, navigateToIdx: 18},
             {text: `Talk to the dragon`, navigateToIdx: 24}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 20,
@@ -190,7 +206,8 @@ const prompts = [
             {text: `Leave the dungeon`, navigateToIdx: 21},
             {text: `Loot the dragon's hoard`, navigateToIdx: 22},
             {text: `Loot the dragon`, navigateToIdx: 23}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 21,
@@ -199,7 +216,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 19},
             {text: ``, navigateToIdx: 19}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image1.jpg)`
     },
     {
         id: 22,
@@ -208,7 +226,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: `take the exit`, navigateToIdx: 21},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 23,
@@ -217,7 +236,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: `take the exit`, navigateToIdx: 21},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 24,
@@ -226,7 +246,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image10.jpg)`
     },
     {
         id: 25,
@@ -235,7 +256,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image10.jpg)`
     },
     {
         id: 26,
@@ -244,7 +266,8 @@ const prompts = [
             {text: `Explore`, navigateToIdx: 28},
             {text: `Go back`, navigateToIdx: 2},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image8.jpg)`
     },
     {
         id: 27,
@@ -253,7 +276,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image10.jpg)`
     },
     {
         id: 28,
@@ -262,7 +286,8 @@ const prompts = [
             {text: `Investigate`, navigateToIdx: 30},
             {text: `Sneak`, navigateToIdx: 29},
             {text: `Go back`, navigateToIdx: 2}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image3.jpg)`
     },
     {
         id: 29,
@@ -271,7 +296,8 @@ const prompts = [
             {text: `Attempt to assasinate the leader`, navigateToIdx: 31},
             {text: `Try to talk`, navigateToIdx: 32},
             {text: `Go back`, navigateToIdx: 2}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 30,
@@ -280,7 +306,8 @@ const prompts = [
             {text: `Barge in and start swinging`, navigateToIdx: 34},
             {text: `Try to talk`, navigateToIdx: 32},
             {text: `Go back`, navigateToIdx: 2}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 31,
@@ -289,7 +316,8 @@ const prompts = [
             {text: `Claim yourself as new tribe leader`, navigateToIdx: 33},
             {text: `Cull the rest of them`, navigateToIdx: 34},
             {text: `Sneak into the shadows`, navigateToIdx: 35}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 32,
@@ -297,8 +325,9 @@ const prompts = [
         options: [
             {text: `fight`, navigateToIdx: 34},
             {text: `target the leader`, navigateToIdx: 31},
-            {text: `Try to escape`, navigateToIdx: 100}
-        ]
+            {text: ``, navigateToIdx: 0}
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 33,
@@ -307,7 +336,8 @@ const prompts = [
             {text: `Command them to find the dragon`, navigateToIdx: 36},
             {text: `Slaughter the goblins`, navigateToIdx: 5},
             {text: `Inspect the camp`, navigateToIdx: 6}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 34,
@@ -315,8 +345,9 @@ const prompts = [
         options: [
             {text: `Go left `, navigateToIdx: 4},
             {text: `Go right`, navigateToIdx: 12},
-            {text: `Loot and leave`, navigateToIdx: 21}
-        ]
+            {text: ``, navigateToIdx: 0}
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 35,
@@ -325,7 +356,8 @@ const prompts = [
             {text: `Pick them off one by one`, navigateToIdx: 37},
             {text: `Fight them`, navigateToIdx: 34},
             {text: `Stay stealthed`, navigateToIdx: 38}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 36,
@@ -334,7 +366,8 @@ const prompts = [
             {text: `Command them to fight for you`, navigateToIdx: 39},
             {text: `Fight the dragon yourself`, navigateToIdx: 18},
             {text: `Fight with the goblins`, navigateToIdx: 41}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 37,
@@ -343,7 +376,8 @@ const prompts = [
             {text: `Go left`, navigateToIdx: 4},
             {text: `Go right`, navigateToIdx: 12},
             {text: `Loot and leave`, navigateToIdx: 21}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 38,
@@ -352,7 +386,8 @@ const prompts = [
             {text: `Go left`, navigateToIdx: 4},
             {text: `Go right`, navigateToIdx: 12},
             {text: `Loot and leave`, navigateToIdx: 21}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 39,
@@ -361,7 +396,8 @@ const prompts = [
             {text: `Finish the dragon`, navigateToIdx: 18},
             {text: `Heal the dragon`, navigateToIdx: 40},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 40,
@@ -370,7 +406,8 @@ const prompts = [
             {text: ``, navigateToIdx: 121},
             {text: `Take the treasure and leave`, navigateToIdx: 21},
             {text: ``, navigateToIdx: 121}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 41,
@@ -379,7 +416,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image10.jpg)`
     },
     {
         id: 42,
@@ -388,16 +426,18 @@ const prompts = [
             {text: `Venture deeper into the dungeon together`, navigateToIdx: 47},
             {text: `Go alone`, navigateToIdx: 45},
             {text: `Tell the mage you only want his staff`, navigateToIdx: 46}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image2.jpg)`
     },
     {
         id: 43,
         question: `You grab the staff from the mage that is weak and bleeding and easily rip it from his hands. What will you do now?`,
         options: [
             {text: `Go deeper into the dungeon`, navigateToIdx: 46},
-            {text: `Help the mage`, navigateToIdx: 21},
-            {text: ``, navigateToIdx: 21}
-        ]
+            {text: `Help the mage`, navigateToIdx: 42},
+            {text: ``, navigateToIdx: 0}
+        ],
+        imageSrc: `url(../assets/images/image2.jpg)`
     },
     {
         id: 44,
@@ -406,7 +446,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: `Go deeper into the dungeon`, navigateToIdx: 45},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image2.jpg)`
     },
     {
         id: 45,
@@ -415,7 +456,8 @@ const prompts = [
             {text: `Fight the dragon head on`, navigateToIdx: 18},
             {text: `Talk to the dragon`, navigateToIdx: 24},
             {text: `Hide`, navigateToIdx: 17}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 46,
@@ -424,7 +466,8 @@ const prompts = [
             {text: `Use the staff`, navigateToIdx: 48},
             {text: `Fight the dragon`, navigateToIdx: 18},
             {text: `Hide`, navigateToIdx: 17}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 47,
@@ -433,7 +476,8 @@ const prompts = [
             {text: `Let the mage cast his spell`, navigateToIdx: 50},
             {text: `Fight the dragon together`, navigateToIdx: 49},
             {text: `Hide`, navigateToIdx: 17}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 48,
@@ -442,7 +486,8 @@ const prompts = [
             {text: `Loot the hoard`, navigateToIdx: 22},
             {text: `Loot the dragon`, navigateToIdx: 23},
             {text: `Leave`, navigateToIdx: 21}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 49,
@@ -451,7 +496,8 @@ const prompts = [
             {text: `Loot the hoard`, navigateToIdx: 22},
             {text: `Loot the dragon`, navigateToIdx: 23},
             {text: `Leave`, navigateToIdx: 21}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image4.jpg)`
     },
     {
         id: 50,
@@ -460,7 +506,8 @@ const prompts = [
             {text: `Fight the mage`, navigateToIdx: 51},
             {text: `Try to talk`, navigateToIdx: 52},
             {text: `Rush for the exit`, navigateToIdx: 21}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image2.jpg)`
     },
     {
         id: 51,
@@ -469,7 +516,8 @@ const prompts = [
             {text: `Rush in with your sword`, navigateToIdx: 56},
             {text: `Try to throw a knife at his staff`, navigateToIdx: 53},
             {text: `Try to talk`, navigateToIdx: 52}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image2.jpg)`
     },
     {
         id: 52,
@@ -478,7 +526,8 @@ const prompts = [
             {text: ``, navigateToIdx: 210},
             {text: `Take the treasure and leave`, navigateToIdx: 21},
             {text: ``, navigateToIdx: 210}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image2.jpg)`
     },
     {
         id: 53,
@@ -487,7 +536,8 @@ const prompts = [
             {text: ``, navigateToIdx: 100},
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image10.jpg)`
     },
     {
         id: 54,
@@ -496,7 +546,8 @@ const prompts = [
             {text: `Go left`, navigateToIdx: 4},
             {text: `Go Right`, navigateToIdx: 5},
             {text: `Go forward`, navigateToIdx: 12}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 55,
@@ -505,7 +556,8 @@ const prompts = [
             {text: `Offer them gold`, navigateToIdx: 57},
             {text: `Offer them rations`, navigateToIdx: 57},
             {text: `fight`, navigateToIdx: 54}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     },
     {
         id: 56,
@@ -515,16 +567,17 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `assets/images/fantasy adventure start.jpg`
+        imageSrc: `url(../assets/images/image10.jpg)`
     },
     {
         id: 57,
-        question: `You try to offer the goblins something thinking they would at least not try to fight you if you gave them something but instead they surrounded you in the time you took to grab an offering of sorts. You are surrounded! You have no other choice, fight!!`,
+        question: `You rummage through your pack trying to offer it to them but instead the goblins get closer and closer. You are surrounded! You have no other choice, fight!!`,
         options: [
             {text: ``, navigateToIdx: 100},
             {text: `Fight!!`, navigateToIdx: 54},
             {text: ``, navigateToIdx: 100}
-        ]
+        ],
+        imageSrc: `url(../assets/images/image7.jpg)`
     }
 ]
 /*------------------------Cached Element References---------------------*/
@@ -556,6 +609,10 @@ function init() {
 }
 
 init()
+
+function secretEnding() {
+    
+}
 
 function checkForWinner() {
     if (currPrompt.id === winId) {
