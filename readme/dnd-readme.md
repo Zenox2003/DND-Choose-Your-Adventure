@@ -8,15 +8,15 @@ My choose your adventure game is a series of options the user can select and get
 [Project planning material](https://docs.google.com/document/d/15MZs_xAvfDJeuWONbSkgV2hv5O_3T2mtGwqfdl2jN1c/edit)
 
 ## Attributions
--- [Google images](https://images.google.com/)
+- [Google images](https://images.google.com/)
 
 ## Technologies used
--- Html
--- Javascript
--- CSS
+- Html
+- Javascript
+- CSS
 
 ## Stretch goals
-..* Reworking the options
-..* Making the game more appealing through CSS
-..* Creating an inventory system that will affect outcomes when making decisions
-..* Making a shop that the players can stop by in the dungeon to spend gold
+* Reworking the options
+* Making the game more appealing through CSS
+* Creating an inventory system that will affect outcomes when making decisions
+* Making a shop that the players can stop by in the dungeon to spend gold
