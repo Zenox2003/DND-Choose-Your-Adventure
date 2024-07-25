@@ -604,6 +604,7 @@ const winId = 21
 function init() {
     currPromptIdx = 0
     currPrompt = prompts[currPromptIdx]
+    let winner = false
     renderBackground()
     renderQuestions()
 }
