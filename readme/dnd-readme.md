@@ -7,7 +7,7 @@ My choose your adventure game is a game where the user has to make the right cho
 I choose this project because I enjoy story telling and play lots of Dungeon & Dragons in my free time. I love the aspect of creating a story with multiple options depending on what the person playing wants to do.
 
 # How to play
-You pick the options that are presented on the screen to venture further in and progress through the story.
+You pick the options that are presented on the screen to venture further in and progress through the story. Read and think about the options given to you and pick accordingly to either make the right or wrong choices.
 
 # Play the game! [DND-Choose-Your-Adventure](https://zenox2003.github.io/DND-Choose-Your-Adventure/)
 
