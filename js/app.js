@@ -17,7 +17,7 @@ const prompts = [
             {text: `right`, navigateToIdx: 5},
             {text: `forward`, navigateToIdx: 6}
         ],
-        imageSrc: `url(../assets/images/image3.jpg)`
+        imageSrc: `url(./assets/images/image3.jpg)`
     },
     {
         id: 2,
@@ -27,7 +27,7 @@ const prompts = [
             {text: `right`, navigateToIdx: 5},
             {text: `forward`, navigateToIdx: 6}
         ],
-        imageSrc: `url(../assets/images/image3.jpg)`
+        imageSrc: `url(./assets/images/image3.jpg)`
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const prompts = [
             {text: `right`, navigateToIdx: 5},
             {text: `forward`, navigateToIdx: 6}
         ],
-        imageSrc: `url(../assets/images/image3.jpg)`
+        imageSrc: `url(./assets/images/image3.jpg)`
     },
     {
         id: 4,
@@ -47,7 +47,7 @@ const prompts = [
             {text: `check for traps`, navigateToIdx: 8},
             {text: `leave it`, navigateToIdx: 9}
         ],
-        imageSrc: `url(../assets/images/image5.jpg)`
+        imageSrc: `url(./assets/images/image5.jpg)`
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ const prompts = [
             {text: `Attempt to cut yourself out`, navigateToIdx: 26},
             {text: `Wait for help`, navigateToIdx: 25}
         ],
-        imageSrc: `url(../assets/images/image8.jpg)`
+        imageSrc: `url(./assets/images/image8.jpg)`
     },
     {
         id: 6,
@@ -67,7 +67,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: `negotiate`, navigateToIdx: 55}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 7,
@@ -77,7 +77,7 @@ const prompts = [
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
         ],
-        imageSrc: `url(../assets/images/image5.jpg)`
+        imageSrc: `url(./assets/images/image5.jpg)`
     },
     {
         id: 8,
@@ -87,7 +87,7 @@ const prompts = [
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
         ],
-        imageSrc: `url(../assets/images/image5.jpg)`
+        imageSrc: `url(./assets/images/image5.jpg)`
     },
     {
         id: 9,
@@ -97,7 +97,7 @@ const prompts = [
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
         ],
-        imageSrc: `url(../assets/images/image5.jpg)`
+        imageSrc: `url(./assets/images/image5.jpg)`
     },
     {
         id: 10,
@@ -107,7 +107,7 @@ const prompts = [
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
         ],
-        imageSrc: `url(../assets/images/image5.jpg)`
+        imageSrc: `url(./assets/images/image5.jpg)`
     },
     {
         id: 11,
@@ -117,7 +117,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 0}
         ],
-        imageSrc: `url(../assets/images/image10.jpg)`
+        imageSrc: `url(./assets/images/image10.jpg)`
     },
     {
         id: 12,
@@ -127,7 +127,7 @@ const prompts = [
             {text: `Take thier staff as they no longer need it`, navigateToIdx: 43},
             {text: `Leave them to bleed out as you venture forward`, navigateToIdx: 44}
         ],
-        imageSrc: `url(../assets/images/image2.jpg)`
+        imageSrc: `url(./assets/images/image2.jpg)`
     },
     {
         id: 13,
@@ -137,7 +137,7 @@ const prompts = [
             {text: `Go right`, navigateToIdx: 11},
             {text: `Go forward`, navigateToIdx: 12}
         ],
-        imageSrc: `url(../assets/images/image5.jpg)`
+        imageSrc: `url(./assets/images/image5.jpg)`
     },
     {
         id: 14,
@@ -147,7 +147,7 @@ const prompts = [
             {text: `Run and swing with your sword`, navigateToIdx: 18},
             {text: `Hide`, navigateToIdx: 17}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 15,
@@ -157,7 +157,7 @@ const prompts = [
             {text: `Attempt to regain your arcane energy`, navigateToIdx: 19},
             {text: `Wind up your arm and throw the sword`, navigateToIdx: 20}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 16,
@@ -167,7 +167,7 @@ const prompts = [
             {text: ``, navigateToIdx: 11},
             {text: ``, navigateToIdx: 12}
         ],
-        imageSrc: `url(../assets/images/image1.jpg)`
+        imageSrc: `url(./assets/images/image1.jpg)`
     },
     {
         id: 17,
@@ -177,7 +177,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image10.jpg)`
+        imageSrc: `url(./assets/images/image10.jpg)`
     },
     {
         id: 18,
@@ -187,7 +187,7 @@ const prompts = [
             {text: `Loot the dragon's hoard`, navigateToIdx: 22},
             {text: `Loot the dragon`, navigateToIdx: 23}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 19,
@@ -197,7 +197,7 @@ const prompts = [
             {text: `Fight`, navigateToIdx: 18},
             {text: `Talk to the dragon`, navigateToIdx: 24}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 20,
@@ -207,7 +207,7 @@ const prompts = [
             {text: `Loot the dragon's hoard`, navigateToIdx: 22},
             {text: `Loot the dragon`, navigateToIdx: 23}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 21,
@@ -217,7 +217,7 @@ const prompts = [
             {text: ``, navigateToIdx: 19},
             {text: ``, navigateToIdx: 19}
         ],
-        imageSrc: `url(../assets/images/image1.jpg)`
+        imageSrc: `url(./assets/images/image1.jpg)`
     },
     {
         id: 22,
@@ -227,7 +227,7 @@ const prompts = [
             {text: `take the exit`, navigateToIdx: 21},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 23,
@@ -237,7 +237,7 @@ const prompts = [
             {text: `take the exit`, navigateToIdx: 21},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 24,
@@ -247,7 +247,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image10.jpg)`
+        imageSrc: `url(./assets/images/image10.jpg)`
     },
     {
         id: 25,
@@ -257,7 +257,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image10.jpg)`
+        imageSrc: `url(./assets/images/image10.jpg)`
     },
     {
         id: 26,
@@ -267,7 +267,7 @@ const prompts = [
             {text: `Go back`, navigateToIdx: 2},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image8.jpg)`
+        imageSrc: `url(./assets/images/image8.jpg)`
     },
     {
         id: 27,
@@ -277,7 +277,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image10.jpg)`
+        imageSrc: `url(./assets/images/image10.jpg)`
     },
     {
         id: 28,
@@ -287,7 +287,7 @@ const prompts = [
             {text: `Sneak`, navigateToIdx: 29},
             {text: `Go back`, navigateToIdx: 2}
         ],
-        imageSrc: `url(../assets/images/image3.jpg)`
+        imageSrc: `url(./assets/images/image3.jpg)`
     },
     {
         id: 29,
@@ -297,7 +297,7 @@ const prompts = [
             {text: `Try to talk`, navigateToIdx: 32},
             {text: `Go back`, navigateToIdx: 2}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 30,
@@ -307,7 +307,7 @@ const prompts = [
             {text: `Try to talk`, navigateToIdx: 32},
             {text: `Go back`, navigateToIdx: 2}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 31,
@@ -317,7 +317,7 @@ const prompts = [
             {text: `Cull the rest of them`, navigateToIdx: 34},
             {text: `Sneak into the shadows`, navigateToIdx: 35}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 32,
@@ -327,7 +327,7 @@ const prompts = [
             {text: `target the leader`, navigateToIdx: 31},
             {text: ``, navigateToIdx: 0}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 33,
@@ -337,7 +337,7 @@ const prompts = [
             {text: `Slaughter the goblins`, navigateToIdx: 5},
             {text: `Inspect the camp`, navigateToIdx: 6}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 34,
@@ -347,7 +347,7 @@ const prompts = [
             {text: `Go right`, navigateToIdx: 12},
             {text: ``, navigateToIdx: 0}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 35,
@@ -357,7 +357,7 @@ const prompts = [
             {text: `Fight them`, navigateToIdx: 34},
             {text: `Stay stealthed`, navigateToIdx: 38}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 36,
@@ -367,7 +367,7 @@ const prompts = [
             {text: `Fight the dragon yourself`, navigateToIdx: 18},
             {text: `Fight with the goblins`, navigateToIdx: 41}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 37,
@@ -377,7 +377,7 @@ const prompts = [
             {text: `Go right`, navigateToIdx: 12},
             {text: `Loot and leave`, navigateToIdx: 21}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 38,
@@ -387,7 +387,7 @@ const prompts = [
             {text: `Go right`, navigateToIdx: 12},
             {text: `Loot and leave`, navigateToIdx: 21}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 39,
@@ -397,7 +397,7 @@ const prompts = [
             {text: `Heal the dragon`, navigateToIdx: 40},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 40,
@@ -407,7 +407,7 @@ const prompts = [
             {text: `Take the treasure and leave`, navigateToIdx: 21},
             {text: ``, navigateToIdx: 121}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 41,
@@ -417,7 +417,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image10.jpg)`
+        imageSrc: `url(./assets/images/image10.jpg)`
     },
     {
         id: 42,
@@ -427,7 +427,7 @@ const prompts = [
             {text: `Go alone`, navigateToIdx: 45},
             {text: `Tell the mage you only want his staff`, navigateToIdx: 46}
         ],
-        imageSrc: `url(../assets/images/image2.jpg)`
+        imageSrc: `url(./assets/images/image2.jpg)`
     },
     {
         id: 43,
@@ -437,7 +437,7 @@ const prompts = [
             {text: `Help the mage`, navigateToIdx: 42},
             {text: ``, navigateToIdx: 0}
         ],
-        imageSrc: `url(../assets/images/image2.jpg)`
+        imageSrc: `url(./assets/images/image2.jpg)`
     },
     {
         id: 44,
@@ -447,7 +447,7 @@ const prompts = [
             {text: `Go deeper into the dungeon`, navigateToIdx: 45},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image2.jpg)`
+        imageSrc: `url(./assets/images/image2.jpg)`
     },
     {
         id: 45,
@@ -457,7 +457,7 @@ const prompts = [
             {text: `Talk to the dragon`, navigateToIdx: 24},
             {text: `Hide`, navigateToIdx: 17}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 46,
@@ -467,7 +467,7 @@ const prompts = [
             {text: `Fight the dragon`, navigateToIdx: 18},
             {text: `Hide`, navigateToIdx: 17}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 47,
@@ -477,7 +477,7 @@ const prompts = [
             {text: `Fight the dragon together`, navigateToIdx: 49},
             {text: `Hide`, navigateToIdx: 17}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 48,
@@ -487,7 +487,7 @@ const prompts = [
             {text: `Loot the dragon`, navigateToIdx: 23},
             {text: `Leave`, navigateToIdx: 21}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 49,
@@ -497,7 +497,7 @@ const prompts = [
             {text: `Loot the dragon`, navigateToIdx: 23},
             {text: `Leave`, navigateToIdx: 21}
         ],
-        imageSrc: `url(../assets/images/image4.jpg)`
+        imageSrc: `url(./assets/images/image4.jpg)`
     },
     {
         id: 50,
@@ -507,7 +507,7 @@ const prompts = [
             {text: `Try to talk`, navigateToIdx: 52},
             {text: `Rush for the exit`, navigateToIdx: 21}
         ],
-        imageSrc: `url(../assets/images/image2.jpg)`
+        imageSrc: `url(./assets/images/image2.jpg)`
     },
     {
         id: 51,
@@ -517,7 +517,7 @@ const prompts = [
             {text: `Try to throw a knife at his staff`, navigateToIdx: 53},
             {text: `Try to talk`, navigateToIdx: 52}
         ],
-        imageSrc: `url(../assets/images/image2.jpg)`
+        imageSrc: `url(./assets/images/image2.jpg)`
     },
     {
         id: 52,
@@ -527,7 +527,7 @@ const prompts = [
             {text: `Take the treasure and leave`, navigateToIdx: 21},
             {text: ``, navigateToIdx: 210}
         ],
-        imageSrc: `url(../assets/images/image2.jpg)`
+        imageSrc: `url(./assets/images/image2.jpg)`
     },
     {
         id: 53,
@@ -537,7 +537,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image10.jpg)`
+        imageSrc: `url(./assets/images/image10.jpg)`
     },
     {
         id: 54,
@@ -547,7 +547,7 @@ const prompts = [
             {text: `Go Right`, navigateToIdx: 5},
             {text: `Go forward`, navigateToIdx: 12}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 55,
@@ -557,7 +557,7 @@ const prompts = [
             {text: `Offer them rations`, navigateToIdx: 57},
             {text: `fight`, navigateToIdx: 54}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     },
     {
         id: 56,
@@ -567,7 +567,7 @@ const prompts = [
             {text: ``, navigateToIdx: 0},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image10.jpg)`
+        imageSrc: `url(./assets/images/image10.jpg)`
     },
     {
         id: 57,
@@ -577,7 +577,7 @@ const prompts = [
             {text: `Fight!!`, navigateToIdx: 54},
             {text: ``, navigateToIdx: 100}
         ],
-        imageSrc: `url(../assets/images/image7.jpg)`
+        imageSrc: `url(./assets/images/image7.jpg)`
     }
 ]
 /*------------------------Cached Element References---------------------*/
