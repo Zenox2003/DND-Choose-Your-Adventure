@@ -23,9 +23,23 @@ body{
 .container-options {
     display: flex;
     flex-wrap: wrap;
+    align-items: row;
 }
 
-.reset {
+#reset {
     margin-top: 100px;
     align-self: center;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    align-items: row;
+    font-size: 16px;
 }
+
+.button {
+    display: flex;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    
+  }
