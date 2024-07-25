@@ -1,10 +1,9 @@
 # DND Choose Your Adventure!
 ![Adventure background](https://cdn1.epicgames.com/ue/product/Screenshot/Door6-1920x1080-53f0b84a2c5d0301a48a41ffca467dd2.png?resize=1&w=1920)
 
-# DND-Choose-Your-Adventure
 My choose your adventure game is a game where the user has to make the right choices to win the game. Choose wisely and think about the path or you will die in the dungeon and lose! 
 
-# My personal reason for making this
+## My personal reason for making this
 I choose this project because I enjoy story telling and play lots of Dungeon & Dragons in my free time. I love the aspect of creating a story with multiple options depending on what the person playing wants to do.
 
 # How to play
